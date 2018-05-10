@@ -62,20 +62,20 @@ class TweetComposeViewController: UIViewController , UITextViewDelegate{
         }
     }
     
-    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        // Set the max character limit
+    /*func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         let characterLimit = 140
         
         // Construct what the new text would be if we allowed the user's latest edit
         let newText = NSString(string: textView.text!).replacingCharacters(in: range, with: text)
         
-        var characterCount = newText.description.count
+        var characterCount = newText.description.
         // TODO: Update Character Count Label
         self.characterCount.title = characterCount.description
         
         // The new text should be allowed? True/False
         return  characterCount < characterLimit
     }
+    */
     
     /*
     // MARK: - Navigation

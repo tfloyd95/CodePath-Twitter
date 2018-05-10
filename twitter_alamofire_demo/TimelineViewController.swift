@@ -10,7 +10,8 @@ import UIKit
 import AlamofireImage
 
 
-class TimelineViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, ComposeViewControllerDelegate{
+class TimelineViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, ComposeViewControllerDelegate
+{
     
     var tweets: [Tweet] = []
     var currentTweet : Tweet?
@@ -104,7 +105,8 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
             
             
             if(segue.identifier == "detailSegue"){
-                if let vc = segue.destination as? TweetDetailViewController{
+                if let vc = segue.destination as? TweetComposeViewController
+                {
                     vc.tweet = cell?.tweet
                     
                 }
